@@ -5,7 +5,7 @@ Descargamos el paquete GitHub para Unity https://unity.github.com/ o desde el As
 
 Podemos configurarlo en **Window->GitHub**.
 
-Iniciamos el proyecto GIT si el proyecto aún no ha sido configurado
+Desde la ventana de Github podemos iniciar el proyecto Git si el proyecto no había sido configurado anteriormente.
 
 Al configurar Github en Unity, se commitearán automaticamente los ficheros **.gitattributes** y **.gitignore**
 
