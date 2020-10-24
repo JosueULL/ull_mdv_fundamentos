@@ -3,7 +3,9 @@
 
 Descargamos el paquete GitHub para Unity https://unity.github.com/ o desde el Asset Store.
 
-Podemos configurarlo en **Window->GitHub**.
+![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega3/screen1.png)
+    
+Una vez añadido al proyecto, podemos configurarlo en **Window->GitHub**.
 
 Desde la ventana de Github podemos iniciar el proyecto Git si el proyecto no había sido configurado anteriormente.
 
