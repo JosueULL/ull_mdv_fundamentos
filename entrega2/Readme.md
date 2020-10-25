@@ -26,6 +26,9 @@ Añadimos distintos ficheros diferentes al repositorio
 
 `git commit -m "Añadido fichero`
 
+Añadimos un formato que queremos excluir de git a nuestro .gitignore, añadiendo la siguiente linea
+
+`*.exe`
 
 Comprobamos que solo los ficheros marcados para seguimiento están siendo trajeados
 
