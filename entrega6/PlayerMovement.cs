@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float TurnSpeed = 200;
 
     private Animator mAnimator = null;
-    private Rigidbody mRigidbody = null;
     private float mCurrentV = 0;
     private float mCurrentH = 0;
     private Vector3 mCurrentDir = Vector3.zero;
@@ -19,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         mAnimator = gameObject.GetComponentInChildren<Animator>();
-        mRigidbody = gameObject.GetComponentInChildren<Rigidbody>();
     }
 
     // --------------------------------------------------------------------
