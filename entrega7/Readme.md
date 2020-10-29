@@ -49,7 +49,7 @@ En los SpriteRenderer de se ha seleccionado SpriteSortPoint = Pivot y se ha esta
 
 ## Animación de otros personajes
 
-Se ha implementado una animación de Idle básica para el resto de personajes que escuchan el uso del botón X por parte del usuario para ejecutar una animación.
+Se ha implementado una animación de Idle básica para el resto de personajes que escuchan el uso de la tecla X por parte del usuario para ejecutar una animación.
 
 ![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega7/screen3.gif)
 
