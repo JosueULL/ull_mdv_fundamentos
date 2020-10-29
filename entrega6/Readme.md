@@ -37,7 +37,7 @@ La consumición del objeto es realizado por el componente PowerUpCollector que p
 
 Éste componente controla los PowerUps que entran o salen de su trigger y los registra en una lista para su consumición. 
 
-Durante el update, se consumer progresivamente los PowerUps que están dentro del trigger.
+Durante el update, se consumen progresivamente los PowerUps que están dentro del trigger.
 
 Para optimizar el sistema. Ambos componentes, los colliders que hacen uso de PowerUps y PowerUpCollector están en una capa física propia, llamada PowerUpSystem. Evitando de esta forma que otros objetos estén registrando las colisiones con estos triggers. 
 
@@ -57,9 +57,9 @@ También se actualiza el parámetro \_Speed en el Animator que es usado para con
 
 Para mostrar los puntos en la interfaz del usuario hemos creado un sistema de eventos global que permite a los componentes comunicarse de forma desacoplada.
 
-Cuando el PowerUpCollector consume alguno de los PowerUps y aumenta la puntuación, éste envía un evento global para avisar a otros sistemas de que esto ha sucedido (usando la clase OnScoreUpdatedEvent en PowerUpCollector).
+Cuando el PowerUpCollector consume alguno de los PowerUps y aumenta la puntuación, éste envía un evento global para avisar a otros sistemas de que la puntuación ha cambiado (usando la clase OnScoreUpdatedEvent en PowerUpCollector).
 
-La clase UIScore se registra a este evento al comenzar la aplicación y actualiza el texto al recibir el evento.
+La clase UIScore se registra al evento al comenzar la aplicación y actualiza el texto al recibir el evento.
 
 
 
