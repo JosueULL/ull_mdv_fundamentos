@@ -33,16 +33,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // This has to be done in FixedUpdate to evaluate the curve at fixed intervals so it always uses the same value for each jump
         UpdateJump();
-
-        if (mCurrentH != 0f || mCurrentV != 0f)
-        {
-            Vector3 newPos = transform.position + Vector3.right * mCurrentH * MoveSpeed * Time.deltaTime + Vector3.up * mCurrentV * Time.deltaTime;
-            if (newPos.y < mGroundPos) // Limit to ground position
-                newPos.y = mGroundPos;
-
-            transform.position = newPos;
-        }
     }
 
     // --------------------------------------------------------------------
@@ -63,6 +55,15 @@ public class PlayerMovement : MonoBehaviour
         mSpriteRenderer.flipX = mCurrentH < 0;
         mAnimator.SetFloat(sSpeedHash, Mathf.Abs(mCurrentH));
         mAnimator.SetFloat(sVVelocityHash, mCurrentV);
+
+        if (mCurrentH != 0f || mCurrentV != 0f)
+        {
+            Vector3 newPos = transform.position + Vector3.right * mCurrentH * MoveSpeed * Time.deltaTime + Vector3.up * mCurrentV * Time.deltaTime;
+            if (newPos.y < mGroundPos) // Limit to ground position
+                newPos.y = mGroundPos;
+
+            transform.position = newPos;
+        }
     }
 
     // --------------------------------------------------------------------
