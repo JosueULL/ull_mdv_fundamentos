@@ -51,7 +51,7 @@ Para esta práctica se ha utilizado un personaje del AssetStore y se ha adaptado
 
 La clase PlayerMovement utiliza el sistema de input tradicional de Unity, obteniendo los ejes de movimiento vertical y horizontal. Estos valores son transformados a direcciones relativas a la camara y finalmente se aplican al Transform del jugador, adicionalmente, se realizan varias interpolaciones para suabizar su movimiento y rotación.
 
-También se actualiza el parámetro \_Speed en el Animator que es usado para controlar la animación del personaje. 
+También se actualiza el parámetro Speed en el Animator que es usado para controlar la animación del personaje. 
 
 ## UI y Eventos
 
