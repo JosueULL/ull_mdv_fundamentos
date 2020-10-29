@@ -49,7 +49,7 @@ Para simplificar la práctica, el componente también lleva el seguimiento de lo
 
 Para esta práctica se ha utilizado un personaje del AssetStore y se ha adaptado, simplificado y optimizado uno de los componentes de movimiento para integrarlo en el proyecto. El movimiento, rotación y actualización del Animator del personaje principal se realiza en el componente PlayerMovement.
 
-La clase PlayerMovement utiliza el sistema de input tradicional de Unity, obteniendo los ejes de movimiento vertical y horizontal. Estos valores son transformados a direcciones relativas a la camara y finalmente se aplican al Transform del jugador, adicionalmente, se realizan varias interpolaciones para suabizar su movimiento y rotación.
+La clase PlayerMovement utiliza el sistema de input tradicional de Unity, obteniendo los ejes de movimiento vertical y horizontal. Estos valores son transformados a direcciones relativas a la cámara y finalmente se aplican al Transform del jugador, adicionalmente, se realizan varias interpolaciones para suavizar su movimiento y rotación.
 
 También se actualiza el parámetro \_Speed en el Animator que es usado para controlar la animación del personaje. 
 
