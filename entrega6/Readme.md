@@ -9,11 +9,11 @@ En esta práctica hemos realizado un pequeño videojuego que se ajusta a los sig
 * El jugador incrementa su puntuación siempre que esté a una distancia menor que un umbral del objeto.
 * Cuando el jugador suma puntos, las dimensiones del objeto disminuyen y se atenúa su color, cuando se llega a un umbral desaparece el objeto.
 
-![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega4/screen1.gif)
+![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega6/screen1.gif)
 
 ## PowerUps
 
-## PowerUpController
+### PowerUpController
 
 Los PowerUps son instanciados y distribuidos por el nivel aleatoriamente por el PowerUpController.
 
@@ -29,7 +29,7 @@ Después de un intervalo preestablecido de tiempo los objetos estáticos interca
 
 La clase PowerUp nos permite establecer puntuaciones y ratios de consumición diferentes para cada objeto.
 
-La clase actualiza el estado del objeto cambiando su color y adicionalmente, su velocidad de rotación cuando el nivel de consumición cambia.
+La clase actualiza el estado del objeto si este es consumido, cambiando su color, reduciendo el tamaño del elemento visual (permaneciendo el trigger del mismo tamaño) y adicionalmente, aumentando su velocidad de rotación.
 
 La consumición del objeto es realizado por el componente PowerUpCollector que puede estar adjuntado a uno o varios jugadores.
 
@@ -48,6 +48,10 @@ Para simplificar la práctica, el componente también lleva el seguimiento de lo
 ## Movimiento del jugador
 
 Para esta práctica se ha utilizado un personaje del AssetStore y se ha adaptado, simplificado y optimizado uno de los componentes de movimiento para integrarlo en el proyecto. El movimiento, rotación y actualización del Animator del personaje principal se realiza en el componente PlayerMovement.
+
+La clase PlayerMovement utiliza el sistema de input tradicional de Unity, obteniendo los ejes de movimiento vertical y horizontal. Estos valores son transformados a direcciones relativas a la camara y finalmente se aplican al Transform del jugador, adicionalmente, se realizan varias interpolaciones para suabizar su movimiento y rotación.
+
+También se actualiza el parámetro \_Speed en el Animator que es usado para controlar la animación del personaje. 
 
 ## UI y Eventos
 
