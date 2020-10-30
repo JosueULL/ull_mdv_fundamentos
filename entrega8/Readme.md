@@ -1,5 +1,8 @@
 # Introducción a la programación de juegos 2D. Físicas
 
+![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega8/demo.gif)
+
+
 En esta práctica se ha realizado un estudio sobre las distintas interacciones físicas en Unity y una pequeña escena siguiendo las siguientes directrices
 * Objeto estático que ejerce de barrera infranqueable.
 * Zona en la que los objetos que caen en ella son impulsados hacia adelante.
