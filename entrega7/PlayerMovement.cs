@@ -2,6 +2,7 @@
 
 public class PlayerMovement : MonoBehaviour
 {
+    private static readonly float sPlayerGravity = 1;
     private static readonly float sInterpolation = 20;
     private static readonly int sSpeedHash = Animator.StringToHash("Speed");
     private static readonly int sVVelocityHash = Animator.StringToHash("VerticalVel");
@@ -79,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (transform.position.y > mGroundPos)// Apply gravity
         {
-            mCurrentV -= 1;
+            mCurrentV -= sPlayerGravity;
         }
         else // Grounded
         {
