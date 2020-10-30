@@ -117,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
         {
             mJumping = true;
             mJumpProgress = 0;
+            mGrounded = false;
             mAnimator.SetTrigger(sJumpHash);
         }
 
