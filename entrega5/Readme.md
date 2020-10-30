@@ -11,7 +11,7 @@ Una vez creado, los ficheros existentes de añaden al servidor como estado inici
 
 Los nuevos cambios aparecerán en la pestaña de Pending. Para subir nuevos cambios a nuestro servidor, creamos una nueva Changelist a la que añadiremos los ficheros modificados.
 
-![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega4/screen3.png)
+![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega5/screen3.png)
 
 Pulsaremos el botón Submit para comittear nuestros cambios.
 
