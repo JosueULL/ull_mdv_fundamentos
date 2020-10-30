@@ -1,7 +1,7 @@
 
 # Introducción a la programación de juegos 2D. Sprites.
 
-En esta práctica se ha realizado una pequeña escena que se ajusta a los siguientes requerimientos:
+En esta práctica hemos realizado una pequeña escena que se ajusta a los siguientes requerimientos:
 
 * Obtener assets que incorpores a tu proyecto: Sprites individuales y Atlas de Sprites.
 * Incorporar los recursos del punto 1 en el proyecto y generar al menos 2 animaciones para uno de los personajes.
@@ -17,7 +17,7 @@ En esta práctica se ha realizado una pequeña escena que se ajusta a los siguie
 
 Se han utilizado diversos assets de uso gratuito de la web itch.io
 
-https://itch.io/game-assets/tag-resources
+https://itch.io/game-assets/
 
 ## Movimiento del jugador
 
