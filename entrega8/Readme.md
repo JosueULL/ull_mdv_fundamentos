@@ -9,6 +9,8 @@ En esta práctica se ha realizado un estudio sobre las distintas interacciones f
 
 ## Interacciones físicas en Unity
 
+Para estudiar las interacciones de objetos físicos en Unity se ha creado el componente PhysicsDebugInfo que nos muestra por consola cuando los eventos OnTriggerEnter2D, OnTriggerExit2D, OnCollisionEnter2D y OnCollisionExit2D son recibidos por el objeto.
+
 ### Dos objetos no físicos
 
 Si solapamos dos objetos no físicos, donde cada uno tiene un collider, no se recibirá ningún evento ni habrá ninguna interacción entre ellos.
