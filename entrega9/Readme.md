@@ -25,6 +25,8 @@ Se ha creado el siguiente nivel utilizando la paleta y los componentes y prefabs
 
 ![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega9/tilemap.PNG)
 
+Para las colisiones del nivel se ha utilizado un CompositeCollider2D junto con TilemapCollider2D para obtener un movimiento más fluido con el personaje, que por ahora usa un BoxCollider2D.
+
 ## Mapa isométrico
 
 Se ha creado el siguiente nivel isométrico utilizando la paleta
