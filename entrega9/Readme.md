@@ -23,7 +23,7 @@ Para la paleta isométrica se ha decidido (trás probar varios tamaños de celda
 
 Se ha creado el siguiente nivel utilizando la paleta y los componentes y prefabs utilizados en prácticas anteriores.
 
-![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega9/tilemap1.PNG)
+![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega9/tilemap.PNG)
 
 ## Mapa isométrico
 
