@@ -29,7 +29,7 @@ Se ha creado un GameManager que envía dos eventos. Uno para la actualización d
 
 Cuando se lanza el evento de comienzo de juego, el ObjectSpawner (que instancia enemigos), el ParallaxEffect y el PlayerController se activan para comenzar el juego.
 
-![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega11/gm.PNG)
+![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega11/gm.png)
 
 ## Físicas
 
@@ -37,11 +37,11 @@ Al igual que en prácticas anteriores se han usado las capas Player y OnlyCollid
 
 El jugador usa un BoxCollider2D y se ha posicionado un box collide que actua como suelo.
 
-![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega11/physics.PNG)
+![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega11/physics.png)
 
 Para los enemigos se han utilizado dos colliders, uno sobre el enemigo para incrementar la puntuación y otro que cubre al enemigo y su parte inferior para matar al jugador.
 
-![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega11/enemy.PNG)
+![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega11/enemy.png)
 
 Ambos colliders envían un evento en OnTriggerEnter usando el componente TriggerListener. Estos eventos son recogidos por el GameManager que actualiza los datos de juego y notifica a otros componentes (como la UI) de estos cambios.
 
