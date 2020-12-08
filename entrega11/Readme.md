@@ -11,6 +11,7 @@ En esta práctica hemos realizado un prototipo que se ajusta a los siguientes re
 Para la realización de la práctica se han utilizado los siguientes assets:
 
 https://ansimuz.itch.io/gothicvania-patreon-collection
+
 https://rvros.itch.io/animated-pixel-hero
 
 ## Parallax
