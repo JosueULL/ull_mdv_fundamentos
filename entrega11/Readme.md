@@ -48,11 +48,11 @@ Ambos colliders envían un evento en OnTriggerEnter usando el componente Trigger
 
 ## Pooling
 
-Se han usado el componente ObjectPool para crear un pool de objetos que se inicializa con un número determinado de instancias.
+Se ha usado el componente ObjectPool para crear un pool de enemigos que se inicializa con un número determinado de instancias.
 
-El componente ObjectSpawner se encarga de obtener de esta pool las nuevas instancias para crear enemigos.
+El componente ObjectSpawner se encarga de obtener de esta pool las instancias disponibles.
 
-Los enemigos son desactivados tras pasar un intervalo de tiempo. Volviendo a estar disponibles para la pool.
+Los enemigos son desactivados tras pasar un intervalo de tiempo usando el componente DisableAfterTime. Volviendo a estar disponibles en la pool.
 
 ## UI
 
