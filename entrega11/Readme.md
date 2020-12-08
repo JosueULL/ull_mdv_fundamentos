@@ -36,15 +36,15 @@ Cuando se lanza el evento de comienzo de juego, el ObjectSpawner (que instancia 
 
 Al igual que en prácticas anteriores se han usado las capas Player y OnlyCollidesWithPlayer por motivos de optimización y simplificación de código.
 
-El jugador usa un BoxCollider2D y se ha posicionado un box collide que actua como suelo.
+El jugador usa un BoxCollider2D y se ha posicionado otro collider estático que actua como suelo.
 
 ![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega11/physics.png)
 
-Para los enemigos se han utilizado dos colliders, uno sobre el enemigo para incrementar la puntuación y otro que cubre al enemigo y su parte inferior para matar al jugador.
+Para los enemigos se han utilizado dos colliders, uno sobre el enemigo para incrementar la puntuación cuando el jugador entra en el trigger y otro que cubre al enemigo y su parte inferior para matar al jugador. 
 
 ![alt text](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entrega11/enemy.png)
 
-Ambos colliders envían un evento en OnTriggerEnter usando el componente TriggerListener. Estos eventos son recogidos por el GameManager que actualiza los datos de juego y notifica a otros componentes (como la UI) de estos cambios.
+Ambos colliders usan la capa OnlyCollidesWithPlayer y envían un evento en OnTriggerEnter usando el componente TriggerListener. Estos eventos son recogidos por el GameManager que actualiza los datos de juego y notifica a otros componentes (como la UI) de estos cambios.
 
 ## Pooling
 
