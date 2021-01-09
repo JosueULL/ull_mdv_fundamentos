@@ -1,18 +1,18 @@
 # The Ancient
 
-[![The Ancient Video](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/ytThumbnail.png)](https://www.youtube.com/watch?v=rrtXn2t2kok)
+[![The Ancient Video](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/ytThumbnail.PNG)](https://www.youtube.com/watch?v=rrtXn2t2kok)
 
 En este proyecto se ha desarrollado un prototipo que contiene una gran parte de los elementos y técnicas estudiadas en clase para el desarrollo de videojuegos
 
 ## Descripción
 
-The Ancient es un videojuego de plataformas metroidvania en donde el jugador tiene que entrar en distintos templos para absorver el poder de los "Ancients". Cada uno de estos poderes, localizados en templos diferentes, permiten al jugador avanzar progresivamente en su aventura y su lucha contra las fuerzas de la oscuridad.
+The Ancient es un videojuego de plataformas tipo metroidvania en donde el jugador tiene que entrar en distintos templos para absorver el poder de los "Ancients". Cada uno de estos poderes, localizados en templos diferentes, permiten al jugador avanzar progresivamente en su aventura, superar diferentes tipos de retos tipo plataforma y vencer las fuerzas de la oscuridad.
 
 Este prototipo, presenta al jugador la incursión del jugador en el primer templo y explora alguna de las mecánicas que podrían formar parte del videojuego final.
 
 Durante el desarrollo del nivel, el jugador puede obtener orbes de energía que funcionan a forma de puntuación. Si el jugador muere es teletransportado a la posición más cercana y pierde un numero determinado de orbes de energía.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/gameplay.gif)]
+![Gameplay](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/gameplay.gif)
 
 ## Cámara
 
@@ -32,7 +32,7 @@ El nivel del juego se ha dividido en 11 sub áreas con distintos retos que intro
 
 Para el diseño del nivel se ha hecho uso de las herramientas de diseño de niveles basados en Tiles ofrecidas por Unity.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/level.png)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/level.PNG)
 
 ## Mecánicas
 
@@ -42,31 +42,31 @@ El prototipo presenta las siguientes mecánicas al jugador:
 
 Permiten activar mecanismos como puertas o pinchos.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/lever.png)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/lever.PNG)
 
 ### Placas Presionables
 
 Permiten activar mecanismos como puertas o pinchos pero mayormente se usan para spawnear cajas. A diferencia de las palancas, las placas vuelven a su estado original y pueden presionarse nuevamente.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/button.png)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/button.PNG)
 
 ### Pinchos
 
 Suponen una amenaza para el jugador y lo matan si este cae en ellos. Normalmente pueden aparecer o desaparecer al activar un mecanismo.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/spikes.png)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/spikes.PNG)
 
 ### Plataformas Rompibles
 
 Permiten al jugador saltar sobre ellas pero solo durante un periodo corto de tiempo, después del cual se rompen. Las plataformas reaparecen al pasar un tiempo.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/crumbling.png)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/crumbling.PNG)
 
 ### Puntos de respawn
 
 El jugador los activa al pasar sobre ellos. Si el jugador muere es teletransportado al último punto de respawn activado.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/respawn.png)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/respawn.PNG)
 
 ## Interfaz de Usuario
 
@@ -76,13 +76,13 @@ El prototipo muestra al jugador distintas UIs durante el menu principal y el gam
 
 Tanto para el menú principal como para el sistema de dialogo se hace uso de un sistema de teleprompter que muestra un texto poco a poco. Esto se consigue haciendo uso de la clase AppearingText que permite acompañar el texto con un sonido de caracter.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/teleprompter.gif)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/teleprompter.gif)
 
 #### Dialogo
 
 Para la secuencia final, se ha creado un sistema de dialogo que hace uso de los ScriptableObjects de Unity. Para crear un dialogo, se ha de crear un Asset de tipo DialogData que permite definir distintas características del dialogo como lineas, nombre del personaje, sonido y eventos.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/dialog.png)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/dialog.PNG)
 
 El sistema de dialog (UIDialog) usa finalmente el sistema de teleprompter y los datos del dialog para mostrarlo al usuario, el cual puede avanzarlo rápidamente.
 
@@ -98,24 +98,24 @@ El jugador hace uso de distintas animaciones que se reproducen dependiendo de lo
 
 También se ha usado la clase AnimationEventHandler que se usa para definir callbacks a eventos de la animación, por ejemplo, los sonidos y efectos de las pisadas del personaje.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/animevent1.png)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/animevent1.PNG)
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/animevent2.png)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/animevent2.PNG)
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/animevent3.png)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/animevent3.PNG)
 
 #### Objetos rompibles
 
 Los objetos rompibles tienen una animación básica de ruptura y desaparición
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/breakable.gif)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/breakable.gif)
 
 #### UI
 
 Como se ha descrito, la UI tiene diversas animaciónes para cuando el jugador obtiene o pierte energía al morir.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/score1.gif)]
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/score2.gif)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/score1.gif)
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/score2.gif)
 
 #### Secuencia final
 
@@ -131,7 +131,7 @@ Para las interaccioes, como palancas y cajas, se han usado Interactor y Interact
 
 Para los sistemas de vida, se han utilizado Damageable y Hazard. Podriamos usar estas mismas capas si se añadieran otros enemigos en el futuro aunque por norma general se requiere un sistema de daño más complejo.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/physics.png)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/physics.PNG)
 
 Los únicos elementos dinámicos del juego son el jugador y las cajas, el resto son estáticos o cinemáticos.
 
@@ -161,7 +161,7 @@ Estos eventos son ScriptableObjects y por lo tanto son assets del proyecto, de f
 
 Por ejemplo, un fichero de datos de dialogo, permite lanzar eventos de diseño al comezar y terminar el dialogo.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/designevent.png)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/designevent.PNG)
 
 Tanto el dialogo, como el evento, son assets que pueden ser creados por diseñadores en el editor y por lo tanto no requieren código.
 
@@ -171,7 +171,7 @@ Otros elementos del juego podrán escuchar y actuar a este evento usando el comp
 
 Por ejemplo, al terminar el dialogo final, se activa la animación que finaliza el prototipo, se desactiva al jugador principal (ya que la animación tiene un sprite propio que representa al personaje) y se desactiva una cámara secundaria.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/designeventlistener.png)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/designeventlistener.PNG)
 
 ## Técnicas
 
@@ -187,4 +187,4 @@ También se ha utilizado para la instanciación de cajas.
 
 Debido al diseño del nivel no había necesidad de hacer un parallax continuo, pero se han creado paqueñas áreas exteriores que hacen uso de la técnica parallax dependiendo de la posición de la camara.
 
-[![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/parallax.gif)]
+![](https://github.com/JosueULL/ull_mdv_fundamentos/blob/master/entregaFinal/parallax.gif)
